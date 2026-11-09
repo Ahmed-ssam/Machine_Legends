@@ -1,0 +1,135 @@
+'use strict';
+/* ===== text2.js: intro, story, menus, HUD, extra strings ===== */
+S('logo.pres', 'iPupil Studios presents', 'iPupil Studios تقدّم');
+S('tt.tag', 'Learn how machines learn', 'تعلّم كيف تتعلّم الآلات');
+S('tt.start', 'Start Game', 'ابدأ اللعبة');
+S('tt.saved', 'Saved Progress', 'التقدم المحفوظ');
+S('tt.settings', 'Settings', 'الإعدادات');
+S('tt.press', 'Press Enter or tap to begin', 'اضغط Enter أو المس الشاشة للبدء');
+S('tt.ver', 'v1.0 · Chapter 1', 'v1.0 · الفصل 1');
+S('sv.title', 'Saved Progress', 'التقدم المحفوظ');
+S('sv.none', 'No saved progress yet.', 'لا يوجد تقدم محفوظ بعد.');
+S('sv.none2', 'Start a new game and your progress will be saved automatically.', 'ابدأ لعبة جديدة وسيُحفظ تقدمك تلقائيًا.');
+S('sv.chapter', 'Chapter 1: Learning Meadows', 'الفصل 1: Learning Meadows');
+S('sv.where', 'Location', 'المكان');
+S('sv.level', 'Level', 'المستوى');
+S('sv.frag', 'Core Fragments', 'Core Fragments');
+S('sv.codex', 'Codex entries', 'مدخلات Codex');
+S('sv.done', 'Chapter complete', 'الفصل مكتمل');
+S('sv.load', 'Load', 'تحميل');
+S('sv.del', 'Delete', 'حذف');
+S('sv.delq', 'Delete this saved progress?', 'هل تريد حذف هذا التقدم المحفوظ؟');
+S('room.village', 'Learning Meadows: Farm Gate', 'Learning Meadows: Farm Gate');
+S('room.yard', 'Learning Meadows: Harvest Yard', 'Learning Meadows: Harvest Yard');
+S('room.training', 'Training Center', 'Training Center');
+S('room.archive', 'Harvest Archive', 'Harvest Archive');
+
+/* story intro */
+S('st.1', 'In the world of Aethera, a giant machine known as the Learning Core once helped everyone learn, predict and solve their problems.', 'في عالم Aethera، كانت آلة عملاقة تُعرف باسم Learning Core تساعد الجميع على التعلّم والتنبؤ وحلّ مشكلاتهم.');
+S('st.2', 'Farms grew rich. Libraries told true stories. Gates knew who to let in. Everything worked because the Core taught machines to learn from examples.', 'ازدهرت المزارع. وحكت المكتبات قصصًا صادقة. وعرفت البوابات من تسمح له بالدخول. كل شيء كان يعمل لأن الـ Core علّم الآلات أن تتعلم من الأمثلة.');
+S('st.3', 'Then, one night, the Core cracked. Six Core Fragments fell across the land, and the lessons they carried turned into six broken rules.', 'ثم في ليلة ما، تشقّق الـ Core. سقطت ست Core Fragments على الأرض، وتحولت الدروس التي تحملها إلى ست قواعد مكسورة.');
+S('st.4', 'Machines began to guess instead of learn. Gates turned good fruit away. Records filled with mistakes. Nobody remembered how learning was meant to work.', 'بدأت الآلات تخمّن بدلًا من أن تتعلّم. صارت البوابات ترفض الفاكهة الجيدة. امتلأت السجلات بالأخطاء. ولم يعد أحد يتذكر كيف كان التعلّم يعمل.');
+S('st.5', 'In the Learning Meadows, a traveler wakes beside a small robot named MILO, who has lost most of its memories.', 'في Learning Meadows، يستيقظ مسافر بجوار روبوت صغير اسمه MILO فقد معظم ذكرياته.');
+S('st.6', 'Together you will visit six cities. In each one you will meet people, learn one big idea by trying it yourself, and face the Boss who broke that rule.', 'ستزوران معًا ست مدن. في كل مدينة ستقابلان أشخاصًا، وتتعلّمان فكرة كبيرة بتجربتها بنفسك، وتواجهان الزعيم Boss الذي كسر تلك القاعدة.');
+S('st.skip', 'Skip', 'تخطي');
+S('st.next', 'Continue', 'متابعة');
+S('how.title', 'How the journey works', 'كيف تسير الرحلة');
+S('how.1t', 'Explore', 'استكشف');
+S('how.1b', 'Walk around, talk to people and follow the golden arrow to your next goal.', 'تجوّل وتحدّث مع الناس واتبع السهم الذهبي إلى هدفك التالي.');
+S('how.2t', 'Learn', 'تعلّم');
+S('how.2b', 'Characters explain one idea at a time. Then you try it yourself in small experiments.', 'تشرح الشخصيات فكرة واحدة في كل مرة. ثم تجرّبها بنفسك في تجارب صغيرة.');
+S('how.3t', 'Face the Boss', 'واجه الزعيم Boss');
+S('how.3b', 'Every city ends with a Boss who asks 10 questions. There is no game over. Ask for hints and try again.', 'تنتهي كل مدينة بزعيم Boss يطرح 10 أسئلة. لا توجد نهاية للعبة بالخسارة. اطلب تلميحات وحاول مجددًا.');
+S('how.goal', 'Your goal: recover all six Core Fragments and restore the Learning Core.', 'هدفك: استرداد كل الـ Core Fragments الست وإصلاح الـ Learning Core.');
+S('how.go', 'Begin the journey', 'ابدأ الرحلة');
+
+/* chapter card */
+S('card.ch', 'Chapter 1', 'الفصل 1');
+S('card.name', 'Learning Meadows', 'Learning Meadows');
+S('card.sub', 'The First City', 'المدينة الأولى');
+S('card.theme', 'Idea: how machines learn from examples', 'الفكرة: كيف تتعلّم الآلات من الأمثلة');
+
+/* HUD */
+S('hud.main', 'Main Quest', 'المهمة الرئيسية');
+S('hud.lv', 'Lv.', 'Lv.');
+S('hud.talk', 'Talk', 'تحدّث');
+S('hud.look', 'Examine', 'افحص');
+S('hud.keys', 'J Journal · C Codex · Esc Menu', 'J Journal · C Codex · Esc القائمة');
+S('hud.act', 'Space', 'Space');
+
+/* objective extras and hotspots */
+S('obj.path', 'Follow the lit stone path at the east edge of the Harvest Yard.', 'اتبع الطريق الحجري المضيء عند الحافة الشرقية من Harvest Yard.');
+S('obj.back', 'Return to the Harvest Yard.', 'ارجع إلى Harvest Yard.');
+S('lock.path', 'The stone path is dark and silent. Not yet.', 'الطريق الحجري مظلم وصامت. ليس بعد.');
+S('tile.fount', 'The Learning Core crystal in the fountain glows faintly. It was once bright gold.', 'تتوهج بلّورة Learning Core في النافورة بخفوت. كانت ذات يوم ذهبية ساطعة.');
+S('tile.sign', 'Learning Meadows. "Every good harvest begins with good records."', 'Learning Meadows. «كل حصاد جيد يبدأ بسجلات جيدة.»');
+S('tile.stall', 'A fruit stall. There are bananas, apples and oranges. Some are not sorted.', 'بسطة فاكهة. فيها موز وتفاح وبرتقال. بعضها غير مصنّف.');
+S('tile.cart', 'A delivery cart. A number is painted on it: 7.', 'عربة توصيل. مكتوب عليها رقم: 7.');
+S('tile.M', 'The training center machine. It hums softly.', 'آلة مركز التدريب. تُصدر طنينًا خافتًا.');
+S('tile.M2', 'The model machine is trained now. Its screen shows glowing bars.', 'الآلة مدرَّبة الآن. تعرض شاشتها أعمدة متوهجة.');
+S('tile.desk', "Wren's desk. A neat stack of notes about old records.", 'مكتب Wren. كومة مرتبة من الملاحظات عن السجلات القديمة.');
+S('tile.S2', 'Rows of records. Many cards are stamped, none are checked.', 'صفوف من السجلات. كثير من البطاقات مختومة، ولم يُراجَع أيٌّ منها.');
+S('fr.Orange', 'Orange', 'برتقالة');
+
+/* arrival / reactions / narration */
+S('arr.1', 'The Learning Meadows. Once the richest farmland in Aethera.', 'Learning Meadows. كانت يومًا أغنى أراضي Aethera الزراعية.');
+S('arr.2', 'The colors look tired here. Everything feels half asleep.', 'الألوان هنا تبدو متعبة. كل شيء يبدو نصف نائم.');
+S('arr.3', 'Let us find someone who can tell us what happened.', 'لنجد من يستطيع إخبارنا بما حدث.');
+S('after.gate', 'The grass looks greener. The gate worked!', 'يبدو العشب أكثر خضرة. نجحت البوابة!');
+S('after.fruit', 'The crates are full again. The yard feels alive.', 'امتلأت الصناديق مجددًا. الساحة تنبض بالحياة.');
+S('react.pip', 'Pip jumps with joy!', 'يقفز Pip فرحًا!');
+S('milo.hint', 'Press Space or tap A to talk to people. Anyone with a golden mark above their head has something important to say.', 'اضغط Space أو المس A للتحدث مع الناس. من يظهر فوق رأسه علامة ذهبية لديه ما يقوله لنا.');
+S('milo.arrow', 'And follow the golden arrow. It always points to our next goal, even when it is far away.', 'واتبع السهم الذهبي. إنه يشير دائمًا إلى هدفنا التالي حتى لو كان بعيدًا.');
+S('pip.more', 'Remember: examples beat rules!', 'تذكّر: الأمثلة أفضل من القواعد!');
+S('pip.done', 'I crossed out half my rulebook. Now I collect examples instead!', 'شطبت نصف كتاب قواعدي. والآن أجمع الأمثلة بدلًا منها!');
+S('pip.win', 'You fixed the archive?! The whole village is cheering!', 'أصلحتما الأرشيف؟! القرية كلها تهتف!');
+S('luma.win', 'The village can recognize new fruit now. Thank you!', 'تستطيع القرية الآن التعرف على الفاكهة الجديدة. شكرًا لكما!');
+S('finch.win', 'The Core Fragment... It was here the whole time, under the stamps.', 'الـ Core Fragment... كانت هنا طوال الوقت، تحت الأختام.');
+S('wren.win', 'I will check every record from now on. Thank you.', 'سأراجع كل سجل من الآن فصاعدًا. شكرًا لكما.');
+S('wren.pre', 'The records are in a bad way. Please speak to Misprint, but be careful.', 'السجلات في حال سيئة. تحدّث مع Misprint، لكن كن حذرًا.');
+S('luma.lab', 'The machine is ready. Shall we try the First Learner?', 'الآلة جاهزة. هل نجرّب First Learner؟');
+S('prompt.sq', 'Side quest available', 'مهمة جانبية متاحة');
+S('journal.title', 'Journal', 'Journal');
+S('codex.title', 'Codex', 'Codex');
+S('codex.locked', 'Not discovered yet', 'لم يُكتشف بعد');
+S('menu.save', 'Save now', 'احفظ الآن');
+S('chapter.end', 'Chapter complete', 'اكتمل الفصل');
+S('end.cont', 'Continue exploring', 'واصل الاستكشاف');
+S('end.title2', 'Learning Meadows restored', 'تم إصلاح Learning Meadows');
+S('end.cliff', 'The Model Workshop is next. Chapter 2 is coming soon.', 'Model Workshop هي التالية. الفصل 2 قادم قريبًا.');
+S('hint.btn', 'Hint', 'تلميح');
+S('hint.worked', 'Worked example', 'مثال محلول');
+S('hint.n', 'Hint {n} of 3', 'التلميح {n} من 3');
+S('hint.used', 'Worked example shown. Now answer in your own words.', 'تم عرض المثال المحلول. أجب الآن بنفسك.');
+S('boss.tap', 'Tap to continue', 'المس للمتابعة');
+S('boss.victory', 'Victory!', 'انتصار!');
+S('boss.vict2', 'Misprint has been convinced! The records will be checked from now on.', 'تم إقناع Misprint! ستُراجَع السجلات من الآن فصاعدًا.');
+S('boss.rewards', 'Rewards', 'المكافآت');
+S('boss.rXP', '+{n} XP', '+{n} XP');
+S('boss.rFrag', 'Core Fragment 1', 'Core Fragment 1');
+S('boss.rCodex', 'Codex: Label quality', 'Codex: Label quality');
+S('boss.hurt', 'Misprint staggers!', 'يترنّح Misprint!');
+S('boss.taunt', 'Misprint smirks. That one was wrong.', 'يبتسم Misprint بسخرية. كانت تلك إجابة خاطئة.');
+S('boss.mast', 'Mastery: {m}', 'الإتقان: {m}');
+S('cx.quality.term', 'Label quality', 'Label quality');
+S('cx.quality.body', 'A model can only be as good as its labels. Check them, fix the clear mistakes and flag the unclear ones.', 'لا يمكن للنموذج أن يكون أفضل من الـ Labels التي تعلّم منها. دقّق فيها، وأصلح الأخطاء الواضحة، وعلّم غير الواضحة.');
+
+S('yard.1', 'The soil is dry and the crates are almost empty. Something is wrong here.', 'التربة جافة والصناديق شبه فارغة. هناك خطب ما هنا.');
+S('lab.1', 'A real training center! Its machine is asleep, but it still hums.', 'مركز تدريب حقيقي! آلته نائمة، لكنها ما زالت تُصدر طنينًا.');
+S('arch.1', 'It is dark down here. Shelves and shelves of old records, and something moving between them.', 'الظلام يعمّ هنا. رفوف كثيرة من السجلات القديمة، وشيء يتحرك بينها.');
+S('luma.ask', 'Hello again! What would you like to do?', 'مرحبًا مجددًا! ماذا تريد أن تفعل؟');
+S('pip.ask', 'Want to check my rulebook?', 'هل تريد أن تراجع كتاب قواعدي؟');
+S('j.1', 'Fix the Farm Gate (Rules vs Examples)', 'أصلح Farm Gate (Rules vs Examples)');
+S('j.2', 'Sample and Dataset', 'Sample و Dataset');
+S('j.3', 'Features and Labels', 'Features و Labels');
+S('j.4', 'Train the First Learner', 'درّب First Learner');
+S('j.5', 'Defeat Misprint in the Harvest Archive', 'اهزم Misprint في Harvest Archive');
+S('j.6', 'Follow the lit stone path', 'اتبع الطريق الحجري المضيء');
+S('mst.0', 'Not Yet', 'Not Yet');
+S('mst.1', 'Practicing', 'Practicing');
+S('mst.2', 'Demonstrated', 'Demonstrated');
+S('menu.title', 'Paused', 'إيقاف مؤقت');
+S('menu.saved', 'Progress saved', 'تم حفظ التقدم');
+S('tk.next', 'Continue', 'متابعة');
+S('tk.of', 'Task {n} of {m}', 'المهمة {n} من {m}');
+S('set.test', 'Test', 'اختبار');

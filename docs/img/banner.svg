@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" role="img" aria-label="Machine Legends. Learn machine learning by playing.">
+<rect width="1200" height="260" rx="18" fill="#14172e"/><rect x="60" y="40" width="4" height="4" fill="#f4f1e8" opacity=".7"/><rect x="180" y="110" width="4" height="4" fill="#ffd24a" opacity=".7"/><rect x="330" y="60" width="4" height="4" fill="#f4f1e8" opacity=".7"/><rect x="520" y="150" width="4" height="4" fill="#5ee0c1" opacity=".7"/><rect x="760" y="50" width="4" height="4" fill="#f4f1e8" opacity=".7"/><rect x="940" y="120" width="4" height="4" fill="#ffd24a" opacity=".7"/><rect x="1080" y="60" width="4" height="4" fill="#f4f1e8" opacity=".7"/><rect x="1150" y="170" width="4" height="4" fill="#5ee0c1" opacity=".7"/><rect x="120" y="200" width="4" height="4" fill="#5ee0c1" opacity=".7"/><rect x="640" y="30" width="4" height="4" fill="#ffd24a" opacity=".7"/>
+<rect x="0" y="246" width="1200" height="14" rx="7" fill="#49b36c"/>
+<text x="600" y="118" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Helvetica,Arial,sans-serif" font-size="84" font-weight="900" fill="#ffd24a" letter-spacing="2">MACHINE LEGENDS</text>
+<text x="600" y="172" text-anchor="middle" font-family="'Trebuchet MS','Segoe UI',Helvetica,Arial,sans-serif" font-size="30" fill="#f4f1e8">Learn classical machine learning by playing a quest.</text>
+<text x="600" y="212" text-anchor="middle" font-family="'Courier New',Menlo,Consolas,monospace" font-size="20" fill="#5ee0c1">six cities  ·  real ML questions  ·  English + Arabic</text>
+</svg>
