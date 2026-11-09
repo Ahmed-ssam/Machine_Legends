@@ -91,12 +91,6 @@ flowchart LR
 | `installers/` | ready-made desktop installers |
 | `docs/` | GitHub Pages copy of the game (`index.html`), README images |
 
-## Limitations
-
-- The 18 secondary characters from the second art sheet are low resolution and look soft when scaled up.
-- Playthrough tests drive the real UI and are slow; the Arabic runs are flaky because of button-text matching.
-- The Windows and macOS installers have not been tested on real machines.
-- Desktop mode needs Edge or Chrome; other browsers open the game in a normal tab.
 
 ## Development
 
