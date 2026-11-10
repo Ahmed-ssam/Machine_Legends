@@ -1,115 +1,140 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Almufti Althaki, Smart Islamic Financial Auditor. Offline Sharia compliance checks for financial contracts." width="100%">
+<img src="assets/banner.svg" alt="Machine Legends. Learn how machines learn. Six cities, six bosses, one broken Learning Core." width="100%">
 
 <br>
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-D4AF5A?style=flat-square&labelColor=0B2E2C)
-![Backend](https://img.shields.io/badge/Backend-FastAPI-0F3D3A?style=flat-square&labelColor=0B2E2C)
-![LLM](https://img.shields.io/badge/LLM-Ollama-D4AF5A?style=flat-square&labelColor=0B2E2C)
-![Vector store](https://img.shields.io/badge/Vector%20store-ChromaDB-0F3D3A?style=flat-square&labelColor=0B2E2C)
-![Privacy](https://img.shields.io/badge/Privacy-100%25%20offline-D4AF5A?style=flat-square&labelColor=0B2E2C)
+![Platform](https://img.shields.io/badge/Platform-Browser-E0B84A?style=flat-square&labelColor=1C1830)
+![Stack](https://img.shields.io/badge/Stack-Vanilla%20JS%20%2B%20Canvas-6FF3FF?style=flat-square&labelColor=1C1830)
+![Languages](https://img.shields.io/badge/Languages-English%20%7C%20Arabic-E0B84A?style=flat-square&labelColor=1C1830)
+![Chapters](https://img.shields.io/badge/Chapters-6-6FF3FF?style=flat-square&labelColor=1C1830)
+![Install](https://img.shields.io/badge/Install-None-E0B84A?style=flat-square&labelColor=1C1830)
+
+[**Play online**](https://ahmed-ssam.github.io/machine-legends/)
 
 </div>
 
 <br>
 
-**Almufti Althaki** (Arabic: المفتي الذكي) is an automated Sharia audit system for financial contracts. It runs **entirely offline**, so sensitive financial data never leaves your machine.
-
-It is built on a retrieval-augmented generation (RAG) architecture that connects Sharia standards to a local language model. Every ruling or audit note is based only on the reference texts you provide.
+**Machine Legends** is an educational pixel-art RPG from the iPupil studio. It teaches the core ideas of machine learning through exploration, small experiments and boss questions. It runs in any modern browser from a single HTML file, in English and Arabic.
 
 <div align="center">
-<img src="assets/features.svg" alt="Air-gapped privacy, hybrid parsing, grounded audit, live results, interactive report" width="100%">
+<img src="assets/features.svg" alt="Learn by doing, no game over, 50-entry Codex, English and Arabic, accessible, runs anywhere" width="100%">
 </div>
 
-## How it works
+## The story
+
+In the world of Aethera, a giant machine called the **Learning Core** once helped everyone learn, predict and solve problems. Then it cracked. Six **Core Fragments** fell across the land, and the lessons they carried turned into six broken rules. Machines began to guess instead of learn, gates turned good fruit away, and records filled with mistakes.
+
+You play a traveler who wakes up beside **MILO**, a small robot that has lost most of its memories. Together you visit six cities. In each one you meet people, learn one big idea by trying it yourself, and face the Boss who broke that rule. Recover all six Core Fragments to restore the Learning Core.
+
+## How a city plays
 
 ```mermaid
 flowchart LR
-    A["Contract<br/>PDF or image"] --> B["Hybrid parsing<br/>PyMuPDF and EasyOCR"]
-    B --> C["Contract clauses"]
-    C --> D[("Retrieve standards<br/>ChromaDB, multilingual-e5-small")]
-    D --> E["Local LLM via Ollama<br/>answers only from retrieved text"]
-    E --> F["Findings streamed over SSE"]
-    F --> G["Browser report<br/>with Chart.js charts"]
+    A["Arrive in a city"] --> B["Meet the people<br/>and explore"]
+    B --> C["Learn one idea<br/>from a character"]
+    C --> D["Try it yourself<br/>in a small experiment"]
+    D --> E{"Boss<br/>10 questions"}
+    E -- "need help" --> H["Hints and a<br/>worked example"]
+    H --> E
+    E -- "passed" --> F["Core Fragment<br/>recovered"]
+    F --> G["Travel to the<br/>next city"]
 ```
 
-1. **Read.** The contract is read with `PyMuPDF` for text PDFs, or with `EasyOCR` for scans and images.
-2. **Retrieve.** For each clause, the most relevant Sharia standards are retrieved from a `ChromaDB` vector database.
-3. **Answer.** The local model answers using only the retrieved passages (a zero-knowledge constraint), so it cannot rely on outside knowledge.
-4. **Stream.** Results stream to the interface clause by clause as they are produced.
+## What you learn
+
+Each city teaches one cluster of machine learning ideas, from first principles to honest evaluation.
+
+| # | City | Boss | Ideas you practice |
+|---|---|---|---|
+| 1 | Learning Meadows | Misprint | Learning from examples, samples and datasets, features and labels, supervised learning, label quality |
+| 2 | Model Workshop | Cheater | Training versus test data, splitting data, data leakage, why a perfect score can be dishonest |
+| 3 | Forest of Patterns | Fanatic | Classification, decision trees, voting, and asking who is missing from the data |
+| 4 | Valley of Neighbors | Bulk | Distance, feature scaling, nearest neighbors, keeping test data out of preparation |
+| 5 | Valley of Predictions | Rote | Regression, fitting a line, measuring errors, balancing too simple against too wiggly |
+| 6 | Islands of Hidden Knowledge | Lag | Probabilities, finding hidden groups, supervised versus unsupervised learning, testing a model honestly |
+
+Everything you discover is saved to the **Codex**, a glossary of 50 entries that fills in as you play.
 
 ## Features
 
-| Area | What it does |
+| Area | Details |
 |---|---|
-| Air-gapped privacy | Runs fully on your machine through the `Ollama` engine. No data is sent to the cloud |
-| Hybrid parsing | Combines `PyMuPDF` for text and `EasyOCR` for scanned contracts and images, chosen automatically |
-| Grounded fiqh audit | Searches the Sharia standards in `ChromaDB` and forces the model to answer from the retrieved texts only |
-| Live streaming (SSE) | Processes and displays audit results clause by clause in real time |
-| Interactive interface | A browser interface for reviewing contracts and reports, with interactive charts built on `Chart.js` |
-
-## Tech stack
-
-| Layer | Technology |
-|---|---|
-| Backend | FastAPI, Python |
-| LLM engine | Ollama (`qwen2.5:1.5b`) |
-| Vector database | ChromaDB |
-| Embeddings | SentenceTransformers (`multilingual-e5-small`) |
-| OCR | EasyOCR |
-| PDF parsing | PyMuPDF |
-| Frontend | HTML5, CSS3, Vanilla JS, Chart.js |
-
-## Getting started
-
-**Requirements:** Python 3.10 or newer, and [Ollama](https://ollama.com/) installed.
-
-1. **Set up the environment**
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate   # On Windows: .\venv\Scripts\activate
-   pip install -r requirements.txt
-   ```
-
-2. **Download the local model**
-
-   ```bash
-   ollama pull qwen2.5:1.5b
-   ```
-
-3. **Build the knowledge base (RAG)**
-
-   ```bash
-   python build_knowledge_base.py
-   ```
-
-4. **Start the server**
-
-   ```bash
-   uvicorn api:app --reload
-   ```
-
-5. **Open the interface.** Open the file `المفتي-الذكي.html` in your browser and start auditing contracts.
+| Learning by doing | Characters explain one idea at a time, then you try it yourself in small interactive experiments |
+| Boss encounters | Every city ends with a Boss who asks 10 questions. There is no game over: ask for up to three hints, see a worked example, and try again |
+| Practice rounds | Optional rehearsals before each boss and three side quests per city |
+| Progress tools | Journal for main and side quests, Codex, and a world map for traveling between cities |
+| Certificate | Finish the game, enter your name and save a completion certificate as an image |
+| Bilingual | Full English and Arabic text, with right-to-left layout and English technical terms kept readable inside Arabic sentences |
+| Accessibility | Adjustable text size and speed, high contrast, reduced motion, sound captions, and separate volume and mute controls |
+| Saves | Progress saves automatically in your browser, with a manual save option |
 
 ## Screenshots
 
 <table>
   <tr>
-    <td width="50%"><img alt="Almufti Althaki interface, screen 1" src="https://github.com/user-attachments/assets/97eaaaa7-1500-43d6-9745-6154c159fa09" width="100%"></td>
-    <td width="50%"><img alt="Almufti Althaki interface, screen 2" src="https://github.com/user-attachments/assets/0fd4741b-71eb-4661-bbd3-ff3a9a124bb7" width="100%"></td>
+    <td><img src="docs/img/village.png" alt="Meeting MILO in Learning Meadows"><br><sub>Meeting MILO in Learning Meadows</sub></td>
+    <td><img src="docs/img/forest.png" alt="The Bird Gate in the Forest of Patterns"><br><sub>The Bird Gate in the Forest of Patterns</sub></td>
   </tr>
   <tr>
-    <td width="50%"><img alt="Almufti Althaki interface, screen 3" src="https://github.com/user-attachments/assets/7cef3f42-6831-4833-8c3d-3949e0d92f0a" width="100%"></td>
-    <td width="50%"><img alt="Almufti Althaki interface, screen 4" src="https://github.com/user-attachments/assets/274f3057-f40d-4445-967a-56dd1500cc52" width="100%"></td>
+    <td><img src="docs/img/valley.png" alt="Bulk at the Great Scale in the Valley of Neighbors"><br><sub>Bulk at the Great Scale in the Valley of Neighbors</sub></td>
+    <td><img src="docs/img/temple.png" alt="Rote in the Temple Courtyard"><br><sub>Rote in the Temple Courtyard</sub></td>
+  </tr>
+  <tr>
+    <td><img src="docs/img/map.png" alt="World map with six cities"><br><sub>World map with six cities</sub></td>
+    <td><img src="docs/img/codex.png" alt="Codex of machine learning concepts"><br><sub>The Codex of machine learning concepts</sub></td>
   </tr>
 </table>
 
-## Responsible use
+<div align="center">
+<img src="docs/img/arabic.png" alt="Arabic interface" width="480"><br>
+<sub>The full Arabic interface, with right-to-left layout</sub>
+</div>
 
-Almufti Althaki supports the audit process. It does not replace a qualified Sharia scholar, and its findings should be reviewed by a person before any decision is made. A small local model trades some accuracy for privacy and speed.
+## Controls
+
+| Action | Keys |
+|---|---|
+| Move | Arrow keys or WASD |
+| Talk or interact | Space, Enter or E |
+| Journal | J |
+| Codex | C |
+| World map | M |
+| Pause and settings | Esc |
+
+On touch devices the game shows an on-screen D-pad and an action button.
+
+## Run it locally
+
+No build step and no dependencies. The whole game is one file.
+
+1. Download or clone the repository.
+2. Open `index.html` in a modern browser.
+
+To serve it over HTTP instead, run `python -m http.server` in the project folder and open `http://localhost:8000`.
+
+The game works offline. The only network request is for the web fonts, which load in the background, and the game falls back to system fonts if they are unavailable.
+
+### Publish with GitHub Pages
+
+1. Open **Settings**, then **Pages**.
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Select the `main` branch and the `/ (root)` folder, then save.
+
+The game will be live at `https://<username>.github.io/<repository>/` within a few minutes.
+
+## Technical notes
+
+- **Single file.** All code, styles, text and artwork live in `index.html`.
+- **Vanilla JavaScript.** No framework and no bundler. The game world is drawn on an HTML Canvas, and the interface is plain DOM.
+- **Generated pixel art.** Characters, portraits, tiles and icons are drawn in code, and the title logo is embedded in the file.
+- **Generated audio.** Music and sound effects are synthesized with the Web Audio API, so there are no audio files.
+- **Internationalization.** All text is stored as English and Arabic pairs and switches instantly, with bidirectional text handling for mixed Arabic and English sentences.
+- **Local saves.** Progress and settings are stored in the browser's `localStorage` and never leave the device.
 
 ## Credits
 
-Built with [Ollama](https://ollama.com/), [ChromaDB](https://www.trychroma.com/), [FastAPI](https://fastapi.tiangolo.com/), [PyMuPDF](https://pymupdf.readthedocs.io/), [EasyOCR](https://github.com/JaidedAI/EasyOCR), [SentenceTransformers](https://www.sbert.net/) and [Chart.js](https://www.chartjs.org/). The banner and logo use the Fraunces, Reem Kufi and Figtree typefaces under the SIL Open Font License (see `assets/`).
+Created by **iPupil**, an educational game studio founded by Ahmed Elmasry ([@Ahmed-ssam](https://github.com/Ahmed-ssam)).
+
+Web fonts: DotGothic16, Baloo 2 and Cairo from Google Fonts, under the SIL Open Font License.
