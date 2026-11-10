@@ -1,109 +1,124 @@
-<p align="center">
-  <img src="docs/img/banner.svg" alt="Machine Legends. Learn classical machine learning by playing a quest." width="100%">
-</p>
+<div align="center">
 
-<p align="center">
-  <a href="https://Ahmed-ssam.github.io/Machine-Legends/"><img src="docs/img/btn-play.svg" alt="Play in browser" height="46"></a>
-  &nbsp;
-  <a href="https://github.com/Ahmed-ssam/Machine-Legends/releases/latest"><img src="docs/img/btn-download.svg" alt="Install on desktop" height="46"></a>
-  &nbsp;
-  <a href="https://ahmed-elmasry99xyz.itch.io/machine-legends"><img src="docs/img/btn-itch.svg" alt="Play on itch.io" height="46"></a>
-</p>
+<img src="docs/img/title.png" alt="Machine Legends title screen" width="720">
 
-<p align="center">
-  <img src="docs/img/demo.gif" alt="Machine Legends gameplay: towns, dialogue, boss quizzes and the certificate" width="480">
-</p>
+# Machine Legends
 
-Walk through six cities with Milo, talk to the villagers, solve their problems, and face a boss in each city. Every boss is beaten by answering real machine learning questions, and each city teaches one idea: examples and rules, training and testing, decision trees, nearest neighbors, fitting lines, and probability. Finish the journey and you get a personal completion certificate. Plain JavaScript, no engine, no dependencies. The whole game is one HTML file. Fully playable in **English and Arabic**.
+**Learn how machines learn by playing through six cities and six bosses.**
 
-> **Status.** All six chapters are playable end to end, in both languages. The Linux installer was tested; the Windows and macOS installers are untested, so please report problems.
+An educational pixel-art RPG from the iPupil studio that teaches the core ideas of machine learning through exploration, small experiments and boss questions. It runs in any modern browser from a single HTML file, in English and Arabic.
 
-<p align="center">
-  <img src="docs/img/features.svg" alt="Six cities. Bosses are quizzes. English and Arabic. One file." width="100%">
-</p>
+![Platform](https://img.shields.io/badge/Platform-Browser-E0B84A?style=flat-square&labelColor=2C2548)
+![Stack](https://img.shields.io/badge/Stack-Vanilla%20JS%20%2B%20Canvas-E0B84A?style=flat-square&labelColor=2C2548)
+![Languages](https://img.shields.io/badge/Languages-English%20%7C%20Arabic-E0B84A?style=flat-square&labelColor=2C2548)
+![Chapters](https://img.shields.io/badge/Chapters-6-E0B84A?style=flat-square&labelColor=2C2548)
+![Install](https://img.shields.io/badge/Install-None-E0B84A?style=flat-square&labelColor=2C2548)
 
-## Try it
+[**Play online**](https://ahmed-ssam.github.io/machine-legends/)
 
-**1. In your browser, no install (best).** Click **Play in browser** above (GitHub Pages) or play on [itch.io](https://ahmed-elmasry99xyz.itch.io/machine-legends). Progress is saved in your browser.
+</div>
 
-**2. On your computer, one click.** Open the [latest release](https://github.com/Ahmed-ssam/Machine-Legends/releases/latest) and download the installer for your system. It copies the game, adds a desktop icon, and opens in its own app-style window (Edge or Chrome).
+---
 
-- Windows: double-click `Machine-Legends-Setup.bat`. If SmartScreen warns, choose **More info, Run anyway** (the script is plain text; open it to check).
-- macOS / Linux: run `bash Machine-Legends-Setup.sh`
+## The story
 
-**3. From source.**
+In the world of Aethera, a giant machine called the **Learning Core** once helped everyone learn, predict and solve problems. Then it cracked. Six **Core Fragments** fell across the land, and the lessons they carried turned into six broken rules. Machines began to guess instead of learn, gates turned good fruit away, and records filled with mistakes.
 
-```bash
-git clone https://github.com/Ahmed-ssam/Machine-Legends.git && cd Machine-Legends
-python3 build.py                 # writes dist/machine-legends.html
-python3 -m http.server -d dist   # or just open the file
-```
-
-Needs Python 3.9 or newer for the build. The game itself needs only a modern browser.
+You play a traveler who wakes up beside **MILO**, a small robot that has lost most of its memories. Together you visit six cities. In each one you meet people, learn one big idea by trying it yourself, and face the Boss who broke that rule. Recover all six Core Fragments to restore the Learning Core.
 
 ## What you learn
 
-| City | Idea | Boss |
-|---|---|---|
-| Learning Meadows | Examples and rules | Tutorial quiz |
-| Model Workshop | Training and testing | Cheater, the Data Leaker |
-| Forest of Patterns | Decision trees and voting | Fanatic, the Biased Learner |
-| Valley of Neighbors | Nearest neighbors and scaling | Bulk, the Loudest Number |
-| Valley of Predictions | Fitting lines, bias and variance | Rote, the Overfitter |
-| Islands of Hidden Knowledge | Probability, hidden groups, honest testing | Lag, the Drifting Model |
+Each city teaches one cluster of machine learning ideas, from first principles to honest evaluation.
 
-Side quests, a Codex of terms you have met, and a certificate at the end.
+| # | City | Boss | Ideas you practice |
+|---|---|---|---|
+| 1 | Learning Meadows | Misprint | Learning from examples, samples and datasets, features and labels, supervised learning, label quality |
+| 2 | Model Workshop | Cheater | Training versus test data, splitting data, data leakage, why a perfect score can be dishonest |
+| 3 | Forest of Patterns | Fanatic | Classification, decision trees, voting, and asking who is missing from the data |
+| 4 | Valley of Neighbors | Bulk | Distance, feature scaling, nearest neighbors, keeping test data out of preparation |
+| 5 | Valley of Predictions | Rote | Regression, fitting a line, measuring errors, balancing too simple against too wiggly |
+| 6 | Islands of Hidden Knowledge | Lag | Probabilities, finding hidden groups, supervised versus unsupervised learning, testing a model honestly |
+
+Everything you discover is saved to the **Codex**, a glossary of 50 entries that fills in as you play.
+
+## Features
+
+| Area | Details |
+|---|---|
+| Learning by doing | Characters explain one idea at a time, then you try it yourself in small interactive experiments |
+| Boss encounters | Every city ends with a Boss who asks 10 questions. There is no game over: ask for up to three hints, see a worked example, and try again |
+| Practice rounds | Optional rehearsals before each boss and three side quests per city |
+| Progress tools | Journal for main and side quests, Codex, and a world map for traveling between cities |
+| Certificate | Finish the game, enter your name and save a completion certificate as an image |
+| Bilingual | Full English and Arabic text, with right-to-left layout and English technical terms kept readable inside Arabic sentences |
+| Accessibility | Adjustable text size and speed, high contrast, reduced motion, sound captions, and separate volume and mute controls |
+| Saves | Progress saves automatically in your browser, with a manual save option |
+
+## Screenshots
+
+<table>
+  <tr>
+    <td><img src="docs/img/village.png" alt="Meeting MILO in Learning Meadows"><br><sub>Meeting MILO in Learning Meadows</sub></td>
+    <td><img src="docs/img/forest.png" alt="The Bird Gate in the Forest of Patterns"><br><sub>The Bird Gate in the Forest of Patterns</sub></td>
+  </tr>
+  <tr>
+    <td><img src="docs/img/valley.png" alt="Bulk at the Great Scale in the Valley of Neighbors"><br><sub>Bulk at the Great Scale in the Valley of Neighbors</sub></td>
+    <td><img src="docs/img/temple.png" alt="Rote in the Temple Courtyard"><br><sub>Rote in the Temple Courtyard</sub></td>
+  </tr>
+  <tr>
+    <td><img src="docs/img/map.png" alt="World map with six cities"><br><sub>World map with six cities</sub></td>
+    <td><img src="docs/img/codex.png" alt="Codex of machine learning concepts"><br><sub>The Codex of machine learning concepts</sub></td>
+  </tr>
+</table>
+
+<div align="center">
+<img src="docs/img/arabic.png" alt="Arabic interface" width="480"><br>
+<sub>The full Arabic interface, with right-to-left layout</sub>
+</div>
 
 ## Controls
 
-| Action | Keyboard | Touch |
-|---|---|---|
-| Move | Arrow keys or WASD | On-screen pad (appears on touch devices) |
-| Talk, confirm | Enter, Space or E | Action button |
-| Pause menu, back | Esc | Menu button |
-| Journal | J | Menu |
-| World map | M | Menu |
-
-## How it works
-
-```mermaid
-flowchart LR
-  SRC[src/*.js<br/>content, world, engine] --> B[build.py]
-  CSS[src/styles.css<br/>src/template.html] --> B
-  B --> HTML[dist/machine-legends.html<br/>one file, art embedded]
-  HTML --> WEB[Browser or GitHub Pages]
-  HTML --> INS[make_installers.py<br/>.bat and .sh]
-```
-
-1. `build.py` joins the source files in a fixed order into a single script, inlines the CSS and the sprite atlas, and writes one HTML file.
-2. Everything is drawn on a canvas with a small tile engine; sounds are generated live with Web Audio, so there are no audio files.
-3. Text lives in one table with English and Arabic strings per key. The Arabic mode switches direction and font.
-4. Character art is packed into `src/npc_art.js` by `tools/make_npc.py` from source sheets.
-
-## Project layout
-
-| Path | What is in it |
+| Action | Keys |
 |---|---|
-| `src/` | game source: core, content, text, sprites, world per city, engine, certificate |
-| `build.py` | bundles `src/` into `dist/machine-legends.html` |
-| `tools/` | art packing, icon, desktop installer builder |
-| `tests/` | Playwright playthrough scripts (English and Arabic) |
-| `installers/` | ready-made desktop installers |
-| `docs/` | GitHub Pages copy of the game (`index.html`), README images |
+| Move | Arrow keys or WASD |
+| Talk or interact | Space, Enter or E |
+| Journal | J |
+| Codex | C |
+| World map | M |
+| Pause and settings | Esc |
 
+On touch devices the game shows an on-screen D-pad and an action button.
 
-## Development
+## Run it locally
 
-```bash
-python3 build.py
-pip install playwright && playwright install chromium
-python3 tests/play.py          # drives the built game with Playwright
-python3 docs/img/make_assets.py   # regenerate banner, buttons and demo.gif
-python3 tools/make_installers.py  # rebuild the desktop installers
-```
+No build step and no dependencies. The whole game is one file.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) and [CHANGELOG.md](CHANGELOG.md).
+1. Download or clone the repository.
+2. Open `index.html` in a modern browser.
 
-## Credits and licenses
+To serve it over HTTP instead, run `python -m http.server` in the project folder and open `http://localhost:8000`.
 
-Machine Legends is MIT licensed, see [LICENSE](LICENSE). Code and design by Ahmed-ssam. Character art is supplied by the author and packed from the author's sheets. Fonts are loaded from Google Fonts when online: Baloo 2, Cairo and DotGothic16 (SIL Open Font License), with system fallbacks offline.
+The game works offline. The only network request is for the web fonts, which load in the background, and the game falls back to system fonts if they are unavailable.
+
+### Publish with GitHub Pages
+
+1. Open **Settings**, then **Pages**.
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Select the `main` branch and the `/ (root)` folder, then save.
+
+The game will be live at `https://<username>.github.io/<repository>/` within a few minutes.
+
+## Technical notes
+
+- **Single file.** All code, styles, text and artwork live in `index.html`.
+- **Vanilla JavaScript.** No framework and no bundler. The game world is drawn on an HTML Canvas, and the interface is plain DOM.
+- **Generated pixel art.** Characters, portraits, tiles and icons are drawn in code, and the title logo is embedded in the file.
+- **Generated audio.** Music and sound effects are synthesized with the Web Audio API, so there are no audio files.
+- **Internationalization.** All text is stored as English and Arabic pairs and switches instantly, with bidirectional text handling for mixed Arabic and English sentences.
+- **Local saves.** Progress and settings are stored in the browser's `localStorage` and never leave the device.
+
+## Credits
+
+Created by **iPupil**, an educational game studio founded by Ahmed Elmasry ([@Ahmed-ssam](https://github.com/Ahmed-ssam)).
+
+Web fonts: DotGothic16, Baloo 2 and Cairo from Google Fonts, under the SIL Open Font License.
