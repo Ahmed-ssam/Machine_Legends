@@ -10,7 +10,9 @@
 ![Chapters](https://img.shields.io/badge/Chapters-6-6FF3FF?style=flat-square&labelColor=1C1830)
 ![Install](https://img.shields.io/badge/Install-None-E0B84A?style=flat-square&labelColor=1C1830)
 
-[**Play online**](https://ahmed-ssam.github.io/machine-legends/)
+<a href="https://ahmed-elmasry99xyz.itch.io/machine-legends"><img src="assets/btn-play.svg" alt="Play online" height="52"></a>
+<a href="https://github.com/Ahmed-ssam/Machine_Legends/releases/latest/download/Machine-Legends-Setup.bat"><img src="assets/btn-windows.svg" alt="Install for Windows" height="52"></a>
+<a href="https://github.com/Ahmed-ssam/Machine_Legends/releases/latest/download/Machine-Legends-Setup.sh"><img src="assets/btn-unix.svg" alt="Install for Mac and Linux" height="52"></a>
 
 </div>
 
@@ -105,28 +107,24 @@ Everything you discover is saved to the **Codex**, a glossary of 50 entries that
 
 On touch devices the game shows an on-screen D-pad and an action button.
 
-## Run it locally
+## Play and install
 
-No build step and no dependencies. The whole game is one file.
+| Option | How |
+|---|---|
+| Play in the browser | Open the [itch.io page](https://ahmed-elmasry99xyz.itch.io/machine-legends). Nothing to install |
+| Install on Windows | Download [`Machine-Legends-Setup.bat`](https://github.com/Ahmed-ssam/Machine_Legends/releases/latest/download/Machine-Legends-Setup.bat) and double-click it. It installs the game and adds a desktop shortcut and a Start menu entry |
+| Install on macOS or Linux | Download [`Machine-Legends-Setup.sh`](https://github.com/Ahmed-ssam/Machine_Legends/releases/latest/download/Machine-Legends-Setup.sh), then run `bash Machine-Legends-Setup.sh`. It adds a desktop shortcut and an application menu entry |
+| Run the built game | Open the game's single HTML file in a modern browser. No server is needed |
 
-1. Download or clone the repository.
-2. Open `index.html` in a modern browser.
+The installers are self-contained and work offline. They open the game in its own app-style window using Chrome, Edge or Brave when one is installed, and in the default browser otherwise.
 
-To serve it over HTTP instead, run `python -m http.server` in the project folder and open `http://localhost:8000`.
+To serve the game over HTTP instead, run `python -m http.server` in the folder that contains the HTML file and open `http://localhost:8000`.
 
 The game works offline. The only network request is for the web fonts, which load in the background, and the game falls back to system fonts if they are unavailable.
 
-### Publish with GitHub Pages
-
-1. Open **Settings**, then **Pages**.
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Select the `main` branch and the `/ (root)` folder, then save.
-
-The game will be live at `https://<username>.github.io/<repository>/` within a few minutes.
-
 ## Technical notes
 
-- **Single file.** All code, styles, text and artwork live in `index.html`.
+- **Self-contained build.** The shipped game is one HTML file with all code, styles, text and artwork inline.
 - **Vanilla JavaScript.** No framework and no bundler. The game world is drawn on an HTML Canvas, and the interface is plain DOM.
 - **Generated pixel art.** Characters, portraits, tiles and icons are drawn in code, and the title logo is embedded in the file.
 - **Generated audio.** Music and sound effects are synthesized with the Web Audio API, so there are no audio files.
@@ -137,4 +135,4 @@ The game will be live at `https://<username>.github.io/<repository>/` within a f
 
 Created by **iPupil**, an educational game studio founded by Ahmed Elmasry ([@Ahmed-ssam](https://github.com/Ahmed-ssam)).
 
-Web fonts: DotGothic16, Baloo 2 and Cairo from Google Fonts, under the SIL Open Font License.
+Web fonts: DotGothic16, Baloo 2 and Cairo from Google Fonts, under the SIL Open Font License. The banner and buttons embed DotGothic16 and Figtree, also under the SIL Open Font License.
